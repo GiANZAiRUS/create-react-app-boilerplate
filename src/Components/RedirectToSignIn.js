@@ -14,7 +14,7 @@ export default class RedirectToSignIn extends Component {
         state: { from: this.props.location }
       }} />
       
-      <p>Eto yung pinush ko</p>
+      <p>Eto aayung pinush ko</p>
       </div>
     )
   }
