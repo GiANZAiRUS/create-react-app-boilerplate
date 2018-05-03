@@ -18,9 +18,4 @@ export default class RedirectToSignIn extends Component {
       </div>
     )
   }
-<<<<<<< HEAD
-  Panget ako
-=======
-  biboy pogi
->>>>>>> 8521b6f412bbc4f97330086f3500d254d07b01b7
 }
