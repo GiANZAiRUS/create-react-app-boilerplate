@@ -8,14 +8,10 @@ export default class RedirectToSignIn extends Component {
 
   render() {
     return (
-      <div>
       <Redirect to={{
         pathname: '/sign-in',
         state: { from: this.props.location }
       }} />
-      
-      <p>Eto aayung pinush ko</p>
-      </div>
     )
   }
 }
