@@ -18,5 +18,4 @@ export default class RedirectToSignIn extends Component {
       </div>
     )
   }
-  amiel amiel
 }
