@@ -5,6 +5,7 @@ import Config from '../../../Config/Admin/Sessions/DataTable'
 export default class Sessions extends Component {
   render() {
     const props = this.props
+    console.log(props.path)
 
     return (
       <DataTable

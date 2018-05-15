@@ -15,7 +15,6 @@ export default class User extends Component {
   constructor(props) {
     super(props)
 
-
     const resource = props.resource
     const formData = resource ? resource : Config.initData
     const schema = setSchema(formData)
@@ -62,7 +61,6 @@ export default class User extends Component {
   }
 
   handleGetRequest() {
-
     if (!Session.decodedToken()) return Session.verifyToken()
     const _this = this
     const apiURL = [process.env.REACT_APP_API_USERS_URL, this.state.resourceId].join('/')
@@ -77,7 +75,7 @@ export default class User extends Component {
       .get(apiURL, cancelTokenCallback)
       .then(({ data }) => {
         console.log(data)
-        this.setState({
+          this.setState({
           formData: data,
           resource: data,
           schema: setSchema(data),
@@ -130,7 +128,6 @@ export default class User extends Component {
 
     data.email = data.email.toLowerCase()
 
-  console.log(data)
 
     Axios({ method, url, data, cancelTokenCallback })
       .then(response => {
